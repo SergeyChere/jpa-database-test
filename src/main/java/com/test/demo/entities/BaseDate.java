@@ -18,9 +18,9 @@ import java.time.LocalDateTime;
 @Entity @Table(name = "persons")
 public class BaseDate extends BaseIdentification {
 
-    @LastModifiedDate @CreatedDate @Column(name = "updated_date")
+    @LastModifiedDate @Column(name = "updated_date")
     private LocalDateTime updatedOn;
 
-    @LastModifiedDate @CreatedDate @Column(name = "created_date")
+    @CreatedDate @Column(name = "created_date", updatable = false, nullable = false)
     private LocalDateTime createdOn;
 }

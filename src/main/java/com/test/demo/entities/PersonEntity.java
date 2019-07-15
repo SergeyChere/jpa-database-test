@@ -9,8 +9,7 @@ import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
-@Getter
+@Setter @Getter
 @Entity @Table(name = "persons")
 public class PersonEntity extends BaseDate {
 
