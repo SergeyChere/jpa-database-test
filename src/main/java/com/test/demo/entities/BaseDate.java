@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter @Getter
-@Entity @Table(name = "persons")
+@Entity @Table(name = "orders")
 public class BaseDate extends BaseIdentification {
 
     @LastModifiedDate @Column(name = "updated_date")

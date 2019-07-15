@@ -14,12 +14,12 @@ import javax.persistence.*;
 @Entity @Table(name = "orders")
 public class OrderEntity extends BaseDate {
 
-    @Column(name = "ORDER_TRANSIT_STATUS") @ColumnDefault("1")
+    @Column(name = "ORDER_TRANSIT_STATUS")
     private Integer order_transit_status = 1;
 
-    @Column(name = "ORDER_PAYMENT_STATUS") @ColumnDefault("1")
+    @Column(name = "ORDER_PAYMENT_STATUS")
     private Integer order_payment_status = 1;
 
-    @Column(name = "ORDER_STATUS") @ColumnDefault("1")
+    @Column(name = "ORDER_STATUS")
     private Integer order_status = 1;
 }
